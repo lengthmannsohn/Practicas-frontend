@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>Ejercicio 1 para crear un formulario</title>
+    </head>
+    <body>
+        <h1>Formulario</h1>
+<form action="https://httpbin.org/post" method="get">
+  <label for="name">Nombre:</label>
+  <input type="text" id="name" name="name" placeholder="Escribe tu nombre" required maxlength="20"><br><br>
+  <label for="email">Correo electrónico:</label>
+  <input type="email" id="email" name="email" placeholder="Escribe tu correo electrónico" required maxlength="50"><br><br>
+  <select name="country" id="country">
+    <option value="disabled" disabled>Seleccione un país</option>
+    <option value="usa">Estados Unidos</option>
+    <option value="canada">Canada</option>
+    <option value="mexico">México</option>
+  </select><br><br>
+  <input type="submit" value="Enviar">
+</form>
+    </body>
+</html>

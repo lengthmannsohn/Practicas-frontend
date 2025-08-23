@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ejercicio 2. Checkboxes y Radios</title>
+    </head>
+    <body>
+        <h1>Formulario</h1>
+        <form action="/form" method="post" >
+            <input type="checkbox" id="html" name="preferencia" value="html">
+            <label for="html">HTML</label>
+        <br>
+            <input type="checkbox" id="css" name="preferencia" value="css">
+            <label for="css">CSS</label>
+        <br>
+            <input type="checkbox" id="javascript" name="preferencia" value="javascript">
+            <label for="javascript">Javascript</label>
+        <br>
+        <br>
+            <label>¿Aceptas las condiciones?</label>
+            <br>
+            <input type="radio" id="si" name="condiciones" value="si" required>
+            <label for="si">Si</label>
+            <br>
+            <input type="radio" id="no" name="condiciones" value="no">
+            <label for="no">No</label>
+            <br>
+            <button type="submit">Enviar</button>
+        </form>
+    </body>
+</html>
