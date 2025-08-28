@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+ <meta charset="UTF-8">
+ <title>Ejemplo de iframe</title>
+</head>
+<body>
+
+ <h2>Vídeo incrustado desde YouTube</h2>
+<iframe width="560" height="315" 
+src="https://www.youtube.com/embed/E0Onxk8MFzw?si=cVKyvlamkEF3zg8E" 
+title="YouTube video player" 
+frameborder="0" 
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+referrerpolicy="strict-origin-when-cross-origin" 
+allowfullscreen>
+</iframe>
+
+ <h2>Mapa incrustado desde Google Maps</h2>
+
+<iframe 
+  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2992.123456789!2d2.173403!3d41.385064!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a1234567890%3A0xabcdef123456789!2sBarcelona!5e0!3m2!1ses!2ses!4v1695893641234!5m2!1ses!2ses" 
+  width="600" 
+  height="450" 
+  style="border:0;" 
+  allowfullscreen="" 
+  loading="lazy" 
+  referrerpolicy="no-referrer-when-downgrade">
+</iframe>
+
+<h2>Canvas básico en HTML</h2>
+
+ <!-- Lienzo sin contenido -->
+ <canvas id="miCanvas1" width="300" height="150"></canvas>
+
+ <h2>Canvas con contorno visual</h2>
+
+ <!-- Lienzo con borde para mostrar sus dimensiones -->
+ <canvas id="miCanvas2" width="300" height="150" style="border:1px solid black;"></canvas>
+
+ <!-- Nota: aún no estamos usando JavaScript para dibujar -->
+
+ <h2>SVG inline: Círculo rojo</h2>
+
+ <!-- SVG insertado directamente en HTML -->
+ <svg width="100" height="100">
+  <circle cx="50" cy="50" r="40" fill="red" />
+ </svg>
+
+ <h2>SVG como imagen externa</h2>
+
+ <!-- SVG cargado como imagen -->
+ <img src="ejemplo.svg" alt="Gráfico SVG">
+
+<header>
+  <h1>Mi Sitio Web</h1>
+  <nav>
+   <a href="#">Inicio</a>
+   <a href="#">Servicios</a>
+   <a href="#">Contacto</a>
+  </nav>
+ </header>
+
+ <main>
+  <section>
+   <h2>Sobre nosotros</h2>
+   <p>Somos una empresa dedicada a la formación online.</p>
+  </section>
+
+  <article>
+   <h2>Última noticia</h2>
+   <p>Hoy lanzamos nuestra nueva plataforma LMS.</p>
+  </article>
+
+  <aside>
+   <h3>Recursos relacionados</h3>
+   <ul>
+    <li><a href="#">HTML Semántico</a></li>
+    <li><a href="#">Guía de accesibilidad</a></li>
+   </ul>
+  </aside>
+ </main>
+
+ <footer>
+  <p>&amp;copy; 2025 Imagina Formación</p>
+ </footer>
+
+ <p><strong>Atención:</strong> Esta operación es irreversible.</p>
+
+ <p><em>No olvides</em> guardar tu trabajo antes de salir.</p>
+
+ <p>Has buscado el término <mark>HTML5</mark> en nuestra documentación.</p>
+
+ <p><small>© 2025 Imagina Formación. Todos los derechos reservados.</small></p>
+
+ <p>Precio anterior: <del>120€</del> — Precio actual: <ins>90€</ins></p>
+
+ <h2>Citas</h2>
+ <blockquote cite="https://developer.mozilla.org/">
+  HTML permite estructurar el contenido de las páginas web.
+ </blockquote>
+ <p>Como dijo un experto: <q>El código limpio es más fácil de mantener.</q></p>
+
+ <h2>Fragmentos de código</h2>
+ <p>Utiliza <code>console.log()</code> para depurar en JavaScript.</p>
+ <pre><code>
+function saludo() {
+ alert("Hola");
+}
+ </code></pre>
+
+ <h2>Teclas y salidas</h2>
+ <p>Presiona <kbd>Alt</kbd> + <kbd>F4</kbd> para cerrar la ventana.</p>
+ <p>El sistema respondió: <samp>Sesión cerrada correctamente</samp></p>
+
+
+</body>
+</html>
