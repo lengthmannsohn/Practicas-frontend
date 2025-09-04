@@ -1,0 +1,27 @@
+/*Este es el primer comentario en CSS*/
+/*Selector de etiqueta*/
+h1 {
+    color:blueviolet;
+    text-align: center;
+    font-size:xx-large;
+}
+
+/*Selector de clase*/
+.destacado {
+    background-color: burlywood;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Selector de id*/
+#principal {
+    border-width: 5px;
+    border-style: solid;
+    border-color: firebrick;
+    background-color: coral;
+    margin: 50px;
+}
+
+/*Las ventajas de separar el contenido de la presentacion son mayor organizacion del codigo, evitar redundancia innecesaria entre otros. 
+Se usa selector de etiqueta cuando se quiere aplicar el estilo a todas las etiquetas del mismo tipo,
+se usa selector de clase cuando se quieren agrupar diferentes elementos en el mismo grupo y con el mismo estilo
+y por ultimo se usa el selector de ID cuando se quiere aplicar el estilo a un solo elemento especifico*/
