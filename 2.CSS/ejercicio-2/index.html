@@ -3,23 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ejercicio 2: Agrupacion de selectores</title>
+    <!-- Cargar Roboto -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        /*El primer bloque de estilo afecta a todos los encabezados H1, H2 y H3*/
+        h1, h2, h3 {color:green; font-size: 16px; font-family: 'Roboto', 'Times New Roman', Times, serif; font-weight: 400; font-style: normal;}
+        p.destacado {color:chocolate; font-size: 20px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-weight: 600; font-style:normal;}
+        article p {color:blueviolet; font-size: 12px; font-family: Verdana, Geneva, Tahoma, sans-serif; font-weight: bold; font-style: italic;}
+    </style>
 </head>
 <body>
-    
+    <h1>Primera cabecera (H1)</h1>
+    <h2>Segunda cabecera (H2)</h2>
+    <h3>Tercera cabecera (H3)</h3>
+    <p class="destacado">Este es un parrafo de la clase destacado</p>
+    <div class="destacado">Esta frase está dentro de un (DIV) tambien de la clase destacado</div>
+    <article>
+        <p>Este es un parrafo (P) dentro de un article</p>
+    </article>
+    <section>
+        <p>Este es otro parrafo (P) dentro de un section</p>
+    </section>
 </body>
+
+<!--Ehojas de estilo sean más limpias y fáciles de mantener. Al aplicar las mismas reglas a varios elementos a la vez, 
+se mejora la eficiencia y se evita duplicar propiedades. Además, facilita la consistencia visual en toda la web y ayuda a 
+optimizar el rendimiento, ya que el navegador procesa menos líneas de código.-->
+
 </html>
-
-
-Crea un documento HTML en el que demuestres el uso de agrupación de selectores, combinación de selectores (etiqueta.clase) y selectores descendientes, junto con estilos de texto y uso de fuentes del sistema y externas. Sigue estos pasos:
-
-Crea un archivo index.html.
-Incluye: un <h1>, un <h2>, un <h3>, un <p class="destacado">, un <div class="destacado">, un <article> con un <p> dentro y un <section> con otro <p>.
-Inserta un bloque <style> en la cabecera del documento donde apliques:
-Una agrupación de selectores para h1, h2, h3 con al menos tres propiedades.
-Una combinación con p.destacado.
-Un selector descendiente con article p.
-Estilos de texto (fuente, tamaño, peso, estilo).
-Fuente externa Roboto de Google Fonts y fuentes del sistema.
-Añade al menos un comentario en el CSS embebido explicando el propósito de un bloque de estilo.
-Justifica en 4-5 líneas por qué es útil agrupar y combinar selectores en CSS.
