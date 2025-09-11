@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3: Alineacion, espaciado y modelo de caja</title>
+    <style>
+        h1 {text-align: center;}
+        #align-left {text-align: left;}
+        #align-right {text-align: right;}
+        #espaciado-lineas-aumentado {line-height: 300%;}
+        #separacion-letras-visible {letter-spacing: 50%;}
+        #division-caja{text-align: center;}
+        #modelo-caja {
+            text-align: center;
+            width: 500px;
+            height: 30px;
+            background-color: lightblue;
+            background-clip: content-box;
+            padding: 20px;
+            border: 3px solid darkblue;
+            margin: 0 auto;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Es una cabecera H1 centrada</h1>
+    <p id="align-left">Parrafo alineado a la izquierda.</p>
+    <p id="align-right">Parrafo alineado a la derecha.</p>
+    <p id="espaciado-lineas-aumentado">Parrafo con el espaciado entre lineas aumentado, para ello debo crear un parrafo mas 
+        largo que ocupe varias lineas, no se hasta cuando tengo que escribir para que esto ocurra pero sigo escribiendo sin
+         pensar mucho porque no importa lo que diga. Continuo escribiendo un poco mas para llegar a una tercera linea visible.
+         HTML no tiene en cuenta que en el codigo se salte de linea manualmente con la tecla Enter hasta que no se escriba la
+         etiqueta Br que viene de la palabra Break en inglés.
+        </p>
+    <p id="separacion-letras-visible">Parrafo con una separacion entre letras que sea claramente visible.</p>
+    <div id="division-caja">
+        <p id="modelo-caja">Este parrafo lo usamos para representar el modelo de caja</p>
+    </div>
+
+
+</body>
+</html>
+
+
+Crea un archivo llamado index.html.
+Inserta en el <head> una etiqueta <style> para incluir los estilos.
+En el <body>, añade:
+Un <h1> centrado.
+Un <p> alineado a la izquierda.
+Un <p> alineado a la derecha.
+Un <p> con espaciado entre líneas aumentado.
+Un <p> con separación entre letras visible.
+Después, crea un <div> con un párrafo dentro, que tenga padding, borde y margen para representar el modelo de caja.
+Añade también dos cajas de comparación: una con padding y otra sin él.
+Asegúrate de aplicar line-height, letter-spacing, text-align, padding, margin y border.
+Incluye al menos un comentario CSS explicativo.
+Explica al final en 3-5 líneas cómo influye el modelo de caja y el espaciado en la legibilidad del contenido.
