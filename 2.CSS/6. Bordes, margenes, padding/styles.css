@@ -1,0 +1,65 @@
+#primera-caja {
+    width: 300px;
+    height: 150px;
+    padding: 20px 40px;
+    border: 5px solid blue;
+    margin: 50px;
+}
+
+#variante-caja {
+    box-sizing: border-box;
+    padding: 20px 40px;
+    border: 5px solid green;
+    margin: 50px;
+}
+
+/* La diferencia apreciable es que en la primera-caja el tamaño es fijo en pixeles y en la variante-caja el tamaño se adapta al de la ventana del navegador */
+
+#caja-2 {
+    width: 75%;
+    height: 150px;
+    padding: 20px 40px;
+    border: 5px solid red;
+    margin: 50px;
+}
+
+#caja-3 {
+    width: 50vw;
+    height: 150px;
+    padding: 20px 40px;
+    border: 5px solid orange;
+    margin: 50px;
+}
+
+#caja-4 {
+    min-width: 700px;
+    max-width: 800px;
+    height: 150px;
+    padding: 20px 40px;
+    border: 5px solid violet;
+    margin: 50px;
+}
+
+#caja-desbordada {
+    overflow: auto;
+    padding: 20px 40px;
+    border: 5px solid aqua;
+    margin: 50px;
+}
+
+Crea un archivo HTML y CSS que represente una caja con width, height, padding, border y margin claramente definidos.
+Escribe el CSS de una caja que tenga:
+Un ancho fijo de 300px
+Un alto fijo de 150px
+Un padding de 20px arriba y abajo, y 40px a los lados
+Un borde de 5px sólido de color azul
+Un margin de 50px en todos los lados
+Crea una variante de esa caja que utilice box-sizing: border-box y explica la diferencia observada en DevTools.
+Construye tres cajas adicionales:
+Una con width en %
+Otra con width en vw
+Otra con min-width y max-width Usa colores distintos y márgenes para separarlas visualmente.
+Crea una caja desbordada con contenido de texto largo y aplica diferentes valores de overflow. Explica cómo cambia el comportamiento visual en cada caso.
+Escribe comentarios detallados en el código explicando cada propiedad y su efecto.
+Utiliza DevTools para inspeccionar las cajas y realiza una captura o escribe las dimensiones totales observadas. Explica qué ocurre con cada capa del modelo de caja.
+Explica y justifica los pasos con tus palabras, cómo utilizaste las propiedades de CSS y qué observaste en el navegador.
