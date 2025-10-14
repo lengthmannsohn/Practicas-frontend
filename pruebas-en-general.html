@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ejemplo interactivo de overflow</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background: #fafafa;
+  }
+
+  h2 {
+    margin-top: 40px;
+    font-size: 18px;
+    color: #333;
+  }
+
+  .contenedor {
+    width: 200px;
+    height: 100px;
+    border: 2px solid #333;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #f5f5f5;
+  }
+
+  .contenido {
+    width: 300px;
+    height: 150px;
+    background: linear-gradient(135deg, #90caf9, #42a5f5);
+    color: white;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .overflow-visible { overflow: visible; }
+  .overflow-hidden  { overflow: hidden; }
+  .overflow-scroll  { overflow: scroll; }
+  .overflow-auto    { overflow: auto; }
+
+  small {
+    color: #666;
+  }
+</style>
+</head>
+<body>
+
+<h1>Demostración práctica de <code>overflow</code></h1>
+<p>Observa cómo el contenido azul se comporta al desbordar el contenedor gris según la propiedad usada:</p>
+
+<h2>1️⃣ overflow: visible (por defecto)</h2>
+<small>➡ El contenido se sale del contenedor y sigue visible.</small>
+<div class="contenedor overflow-visible">
+  <div class="contenido">Visible</div>
+</div>
+
+<h2>2️⃣ overflow: hidden</h2>
+<small>➡ El contenido que se sale del borde desaparece (se recorta).</small>
+<div class="contenedor overflow-hidden">
+  <div class="contenido">Hidden</div>
+</div>
+
+<h2>3️⃣ overflow: scroll</h2>
+<small>➡ Siempre aparecen barras de desplazamiento, aunque no sean necesarias.</small>
+<div class="contenedor overflow-scroll">
+  <div class="contenido">Scroll</div>
+</div>
+
+<h2>4️⃣ overflow: auto</h2>
+<small>➡ Solo aparecen las barras si el contenido realmente se desborda.</small>
+<div class="contenedor overflow-auto">
+  <div class="contenido">Auto</div>
+</div>
+
+</body>
+</html>

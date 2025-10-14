@@ -1,0 +1,82 @@
+#primera-caja {
+    /*Tamaño de caja observado 300*150.
+    El contenido se ajusta al tamaño indicado
+    El padding se ajusta al tamaño indicado
+    El border se ajusta al tamaño indicado
+    El margin se ajusta al tamaño indicado*/
+    width: 300px; /*Propiedad de ancho de la caja que determina su ancho*/
+    height: 150px; /*Propiedad de alto de la caja*/
+    padding: 20px 40px; /*Propiedad de relleno de la caja entre el contenido y el borde*/
+    border: 5px solid blue; /*Propiedad del borde de la caja*/
+    margin: 50px; /*Propiedad del margen de la caja*/
+}
+
+#variante-caja {
+    /*Tamaño de caja observado 1234*18.
+    El contenido se ajusta al ancho de la ventana del navegador dejando el margen correspondiente
+    El padding se ajusta al tamaño indicado
+    El border se ajusta al tamaño indicado
+    El margin se ajusta al tamaño indicado*/
+    box-sizing: border-box;
+    padding: 20px 40px;
+    border: 5px solid green;
+    margin: 50px;
+}
+
+/* La diferencia apreciable es que en la primera-caja el tamaño es fijo en pixeles y en la variante-caja el tamaño se adapta al de la ventana del navegador */
+
+#caja-2 {
+    /*Tamaño de caja observado 1068*150.
+    El contenido se ajusta al tamaño de la ventana contenedora pero dejando un poco mas de espacio
+    El padding se ajusta al tamaño indicado
+    El border se ajusta al tamaño indicado
+    El margin se ajusta al tamaño indicado*/
+    width: 75%;
+    height: 150px;
+    padding: 20px 40px;
+    border: 5px solid red;
+    margin: 50px;
+}
+
+#caja-3 {
+    /*Tamaño de caja observado 720*150.
+    El contenido se ajusta al tamaño de la ventana contenedora a la mitad del tamaño
+    El padding se ajusta al tamaño indicado
+    El border se ajusta al tamaño indicado
+    El margin se ajusta al tamaño indicado*/
+    width: 50vw;
+    height: 150px;
+    padding: 20px 40px;
+    border: 5px solid orange;
+    margin: 50px;
+}
+
+#caja-4 {
+    /*Tamaño de caja observado 800*150.
+    El contenido se ajusta al tamaño indicado siendo el maximo de 800
+    El padding se ajusta al tamaño indicado
+    El border se ajusta al tamaño indicado
+    El margin se ajusta al tamaño indicado*/
+    min-width: 700px;
+    max-width: 800px;
+    height: 150px;
+    padding: 20px 40px;
+    border: 5px solid violet;
+    margin: 50px;
+}
+
+#caja-desbordada {
+    /*Explicacion de los diferentes comportamientos de overflow: Con visible el contenido se ve y sobresale de la caja, 
+    con hidden el contenido queda oculto como si estuviera detras de la caja, 
+    con scroll aparece una barra de navegacion para poder desplazarse por el contenido oculto
+    y con auto solo aparece la barra de scroll si es necesario
+    */
+    width: 300px;
+    height: 50px;
+    overflow: visible;
+    padding: 20px 40px;
+    border: 5px solid aqua;
+    margin: 50px;
+}
+
+/*Las propiedades las usé correctamente y observé diferentes cambios al modificarlas con ejemplos*/
