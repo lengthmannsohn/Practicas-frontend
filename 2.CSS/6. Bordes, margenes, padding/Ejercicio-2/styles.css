@@ -1,0 +1,42 @@
+.bloque-1 {
+    box-sizing: border-box;
+    /* Tamaño del contenido usando solo content-box o border-box: 1418*113,88 no cambia porque no está declarado el tamaño explicito del ancho o alto de la caja*/
+    border: 3px solid rebeccapurple; /* Incluye un borde de 3px, solido y color purple */
+    border-top-color: aqua; /* Las proximas propiedades dan diferentes colores y curvas de las esquinas a los diferentes lados de la caja */
+    border-bottom-color: brown;
+    border-left-color: chartreuse;
+    border-right-color: chocolate;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 30px;
+    /* Con border-radius uniforme todas las esquinas se redondean haciendo una curva mas o menos grande segun el tamaño.
+    Con border-radius independiente por cada esquina hace igual pero cada esquina diferente según nosotros le indicamos*/
+    padding: 50px;
+    margin: 50px;
+}
+
+.bloque-2 {
+    width: 500px;
+    box-sizing: border-box;
+    border: 3px dashed rebeccapurple;
+    border-radius: 10px;
+    padding: 50px;
+    margin: 50px;
+}
+
+.bloque-3 {
+    width: 500px;
+    box-sizing: content-box;
+    border: 3px dotted olivedrab;
+    border-radius: 10px;
+    padding: 50px;
+    margin: 50px;
+}
+
+/*Cambian visualmente el bloque-2 y el bloque-3 en el ancho en que el bloque-3 es mas ancho porque el tamaño de la caja
+excluye el padding y el border y en el bloque-2 se incluye todo en los 500px de ancho: contenido, padding y border*/
+
+/* El border afecta en si se ve o no el borde de la caja y con que diseño se ve.
+El box-sizing afecta en como se calcula el tamaño total de la caja tomando diferentes puntos de partida para el calculo.
+Esto es relevante para el diseño total de la pagina y como encajan todos los elementos en el layout*/
