@@ -1,0 +1,28 @@
+.form:focus {
+    outline: 5px solid blue;
+}
+
+.form:invalid {
+    outline: 2px dashed red;
+    outline-offset: 5px; /*Al aplicar outline-offset se crea una barra trasnparente entre el borde del elemento y el outline separandolos 5 px en este caso*/
+}
+
+#parrafo-largo {
+    width: 500px;
+    height: 50px;
+    overflow: auto;
+}
+
+.contenedor {
+    width: 600px; /* Define un ancho fijo para el contenedor */
+    border: 1px solid grey; /* Solo para visualizar el límite del contenedor */
+    padding: 10px;
+}
+
+#titulo-largo {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+/*Usando outline los demas elementos no se desplazan pero con border si, el contenido desbordado no se muestra al poner overflow: auto. se muestran tres puntos suspensivos al incluir text-overflow: ellipsis*/
