@@ -1,0 +1,85 @@
+/* ================================
+   ESTILOS GENERALES DE LA PÁGINA
+   ================================ */
+
+/* Reiniciamos algunos valores por defecto del navegador */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo general del cuerpo del documento */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Tipografía legible */
+    background-color: #f5f5f5; /* Fondo claro y neutro */
+    color: #333; /* Texto oscuro para buena lectura */
+    line-height: 1.6; /* Espaciado entre líneas cómodo */
+    padding: 0 20px; /* Margen interno lateral */
+}
+
+/* ================================
+   ENCABEZADO Y NAVEGACIÓN
+   ================================ */
+
+header {
+    background-color: #1e88e5; /* Azul profesional */
+    color: white; /* Contraste con el fondo */
+    padding: 20px 0; /* Espaciado vertical */
+    text-align: center; /* Centrado del texto */
+}
+
+/* Título principal dentro del header */
+header h1 {
+    margin-bottom: 10px; /* Separación con el menú */
+    font-size: 2em; /* Tamaño grande del título */
+}
+
+/* Contenedor de navegación */
+nav ul {
+    list-style: none; /* Quitamos los puntos de la lista */
+    display: flex; /* Mostramos los elementos en línea */
+    justify-content: center; /* Centramos horizontalmente */
+    gap: 20px; /* Espacio entre elementos */
+    padding: 0;
+}
+
+/* Elementos individuales del menú */
+nav li {
+    background-color: #1565c0; /* Azul más oscuro para contraste */
+    padding: 10px 20px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s ease; /* Efecto suave al pasar el ratón */
+}
+
+/* Efecto al pasar el ratón sobre los elementos del menú */
+nav li:hover {
+    background-color: #0d47a1; /* Azul aún más oscuro */
+    cursor: pointer; /* Cambia el cursor */
+}
+
+/* ================================
+   CONTENIDO PRINCIPAL (MAIN)
+   ================================ */
+
+main {
+    background-color: white; /* Fondo blanco para contraste */
+    max-width: 800px; /* Ancho máximo legible */
+    margin: 40px auto; /* Centrado horizontal y margen vertical */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Subtítulo del artículo */
+article h2 {
+    color: #1e88e5; /* Azul coherente con el header */
+    margin-bottom: 15px;
+    font-size: 1.5em;
+}
+
+/* Párrafo del artículo */
+article p {
+    text-align: justify; /* Alineación uniforme */
+    font-size: 1.1em;
+}
