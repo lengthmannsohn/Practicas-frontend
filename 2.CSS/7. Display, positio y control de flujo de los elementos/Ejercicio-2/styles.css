@@ -1,5 +1,29 @@
+.cabecera {
+    position: fixed;
+
+}
+
+.navegacion {
+
+}
+
+.lista-desordenada {
+    display: flex;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+    margin-left: 1ch;
+}
 
 
+.h2 {
+    position: sticky;
+    top: 50px;
+}
 
 
 1. Crea un ejemplo HTML y CSS donde un menú superior se mantenga fijo al hacer scroll (usa position: fixed).
