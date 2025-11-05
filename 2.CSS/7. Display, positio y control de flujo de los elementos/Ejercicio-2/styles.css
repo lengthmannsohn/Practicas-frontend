@@ -23,11 +23,27 @@ li {
 
 .contenedor {
   background: lightgray;
+  overflow: auto;
 }
 
 .img-flotante {
     float: left;
-    width: 150px;
+    margin-right: 15px;
+}
+
+.contenedor-2::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.contenedor-2 {
+  background: sandybrown;
+
+}
+
+.img-flotante {
+    float: left;
     margin-right: 15px;
 }
 
