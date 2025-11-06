@@ -2,33 +2,30 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
-<title>Pseudoelemento ::after visible</title>
+<title>Diferenciar contenido, padding y border</title>
 <style>
 .caja {
-  background: lightgray;
-  padding: 10px;
-  width: 300px;
-}
-
-/* Hacemos visible el ::after */
-.caja::after {
-  content: "SOY ::after";
-  /* display: block; */
-  background: yellow;
-  color: red;
-  padding: 5px;
-  margin-top: 10px;
-  border: 2px solid red;
+  height: 100px;
+  width:  300px;
+  color: white;                /* Color del texto (contenido) */
+  background: blue;            /* Fondo del contenido */
+  
+  padding: 30px;               /* Espacio interno */
+  background-clip: content-box; /* El fondo azul solo en el área del contenido */
+  
+  border: 5px solid red;       /* Borde visible */
+  background-origin: content-box;
+  
+  /* Para ver el área del padding en otro color */
+  box-shadow: inset 0 0 0 30px lightgreen;
 }
 </style>
 </head>
 <body>
 
 <div class="caja">
-  Esta es la caja principal.
+  CONTENIDO
 </div>
 
 </body>
 </html>
-
-

@@ -31,13 +31,13 @@ li {
     margin-right: 15px;
 }
 
-.contenedor-2::after {
+.clearfix::after {
     content: "";
     display: table;
     clear: both;
 }
 
-.contenedor-2 {
+.clearfix::after {
   background: sandybrown;
 
 }
