@@ -8,8 +8,12 @@
 </head>
 <body>
     <header class="cabecera">
-        <nav class="navegacion">
-            <ul class="lista-desordenada">
+        <nav class="navegacion"> <!-- Menú fijo en la parte superior al hacer scroll -->
+            <ul class="lista-desordenada"><!-- Lista de elementos del menú -->
+                <li>Inicio</li>
+                <li>Servicios</li>
+                <li>Productos</li>
+                <li>Contacto</li>
                 <li>Archivo</li>
                 <li>Opciones</li>
                 <li>Salir</li>
@@ -17,11 +21,10 @@
         </nav>
     </header>
 
-    <main>
-        <br>
-        <br>
-        <section>
-            <p>
+    <main><!-- Contenido principal de la página -->
+        <h1 class="h1">La historia del libro</h1><!-- Encabezado principal -->
+        <section><!-- Sección con encabezado sticky -->
+            <p><!-- Párrafo introductorio sobre los libros -->
                 Un libro (del latín liber, libri) es una obra impresa, manuscrita o pintada en una serie de hojas de papel, pergamino, vitela u otro material, unidas por un lado (es decir, encuadernadas) y protegidas con tapas, también llamadas cubiertas. Un libro puede tratar sobre cualquier tema. Según la definición de la Unesco,[1]​[2]​ un libro debe poseer al menos veinticinco hojas (49 páginas), pues de veinticuatro hojas o menos sería un folleto; y de una hasta cuatro páginas se consideran hojas sueltas (en una o dos hojas).[2]​
 
                 También se llama «libro» a una obra de gran extensión publicada en varias unidades independientes, llamadas tomos o volúmenes. Otras veces se llama «libro» a cada una de las partes de una obra, aunque físicamente se publiquen todas en un mismo volumen (ejemplo: Libros de la Biblia).
@@ -44,8 +47,8 @@
             </p>
         </section>
 
-        <section>
-            <h2 class="h2">Las señales gestuales</h2>
+        <section><!-- Sección con imagen flotante y texto -->
+            <h2 class="h2">Las señales gestuales</h2><!-- Encabezado de segundo nivel -->
             <p>Las señales gestuales fueron la primera forma de expresar y transmitir mensajes. La palabra hablada es la manera más antigua de contar historias. Mediante fórmulas de valor mnemotécnico se estructuraban narraciones, que pasaban de generación en generación como valiosa herencia cultural de los más diversos grupos humanos. Dichas reglas mnemotécnicas ayudaban tanto a la memorización como a la difusión de los relatos. Es el caso de los poemas homéricos, que han merecido valiosos estudios sobre el particular. Posiblemente, gran parte de las tradiciones y leyendas han tenido semejante inicio. Esta transmisión oral tenía el inconveniente de los «ruidos» que deformaban el mensaje. La mayoría de las veces era el narrador (rapsoda, aeda, juglar) quien en función de sus intereses la deformaba de una u otra forma.
 
             La escritura
@@ -68,9 +71,9 @@
             </p>
         </section>
 
-        <section>
-            <div class="contenedor">
-                <img class="img-flotante" src="colgar_ropa.png" alt="Dibujo colgando la ropa">
+        <section><!-- Sección con ejemplos de float y clearfix -->
+            <div class="contenedor"><!-- Contenedor para la imagen flotante y el texto -->
+                <img class="img-flotante" src="colgar_ropa.png" alt="Dibujo colgando la ropa"><!-- Imagen flotante a la izquierda -->
                 <p>
                     En un lugar de la Mancha, de cuyo nombre no quiero acordarme, no ha mucho tiempo que vivía un hidalgo de los de lanza en astillero, adarga antigua, rocín flaco y galgo corredor. Una olla de algo más vaca que carnero, salpicón las más noches, duelos y quebrantos los sábados, lantejas los viernes, algún palomino de añadidura los domingos, consumían las tres partes de su hacienda. El resto della concluían sayo de velarte, calzas de velludo para las fiestas, con sus pantuflos de lo mesmo, y los días de entresemana se honraba con su vellorí de lo más fino. Tenía en su casa una ama que pasaba de los cuarenta, y una sobrina que no llegaba a los veinte, y un mozo de campo y plaza, que así ensillaba el rocín como tomaba la podadera. Frisaba la edad de nuestro hidalgo con los cincuenta años; era de complexión recia, seco de carnes, enjuto de rostro, gran madrugador y amigo de la caza. Quieren decir que tenía el sobrenombre de Quijada, o Quesada, que en esto hay alguna diferencia en los autores que deste caso escriben; aunque por conjeturas verosímiles se deja entender que se llamaba Quijana. Pero esto importa poco a nuestro cuento: basta que en la narración dél no se salga un punto de la verdad.
                     Es, pues, de saber que este sobredicho hidalgo, los ratos que estaba ocioso, que eran los más del año, se daba a leer libros de caballerías, con tanta afición y gusto, que olvidó casi de todo punto el ejercicio de la caza, y aun la administración de su hacienda; y llegó a tanto su curiosidad y desatino en esto, que vendió muchas hanegas de tierra de sembradura para comprar libros de caballerías en que leer, y así, llevó a su casa todos cuantos pudo haber dellos; y de todos, ningunos le parecían tan bien como los que compuso el famoso Feliciano de Silva; porque la claridad de su prosa y aquellas entricadas razones suyas le parecían de perlas, y más cuando llegaba a leer aquellos requiebros y cartas de desafíos, donde en muchas partes hallaba escrito: «La razón de la sinrazón que a mi razón se hace, de tal manera mi razón enflaquece, que con razón me quejo de la vuestra fermosura». Y también cuando leía: «... los altos cielos que de vuestra divinidad divinamente con las estrellas os fortifican, y os hacen merecedora del merecimiento que merece la vuestra grandeza».
@@ -78,37 +81,19 @@
             </div>
 
                         <div class="clearfix">
-                <img class="img-flotante" src="colgar_ropa.png" alt="Dibujo colgando la ropa">
-                <p>
+                <img class="img-flotante" src="colgar_ropa.png" alt="Dibujo colgando la ropa"><!-- Imagen flotante a la izquierda con clearfix aplicado -->
+                <p><!-- Párrafo de texto que acompaña a la imagen flotante -->
                     En un lugar de la Mancha, de cuyo nombre no quiero acordarme, no ha mucho tiempo que vivía un hidalgo de los de lanza en astillero, adarga antigua, rocín flaco y galgo corredor. Una olla de algo más vaca que carnero, salpicón las más noches, duelos y quebrantos los sábados, lantejas los viernes, algún palomino de añadidura los domingos, consumían las tres partes de su hacienda. El resto della concluían sayo de velarte, calzas de velludo para las fiestas, con sus pantuflos de lo mesmo, y los días de entresemana se honraba con su vellorí de lo más fino. Tenía en su casa una ama que pasaba de los cuarenta, y una sobrina que no llegaba a los veinte, y un mozo de campo y plaza, que así ensillaba el rocín como tomaba la podadera. Frisaba la edad de nuestro hidalgo con los cincuenta años; era de complexión recia, seco de carnes, enjuto de rostro, gran madrugador y amigo de la caza. Quieren decir que tenía el sobrenombre de Quijada, o Quesada, que en esto hay alguna diferencia en los autores que deste caso escriben; aunque por conjeturas verosímiles se deja entender que se llamaba Quijana. Pero esto importa poco a nuestro cuento: basta que en la narración dél no se salga un punto de la verdad.
                     Es, pues, de saber que este sobredicho hidalgo, los ratos que estaba ocioso, que eran los más del año, se daba a leer libros de caballerías, con tanta afición y gusto, que olvidó casi de todo punto el ejercicio de la caza, y aun la administración de su hacienda; y llegó a tanto su curiosidad y desatino en esto, que vendió muchas hanegas de tierra de sembradura para comprar libros de caballerías en que leer, y así, llevó a su casa todos cuantos pudo haber dellos; y de todos, ningunos le parecían tan bien como los que compuso el famoso Feliciano de Silva; porque la claridad de su prosa y aquellas entricadas razones suyas le parecían de perlas, y más cuando llegaba a leer aquellos requiebros y cartas de desafíos, donde en muchas partes hallaba escrito: «La razón de la sinrazón que a mi razón se hace, de tal manera mi razón enflaquece, que con razón me quejo de la vuestra fermosura». Y también cuando leía: «... los altos cielos que de vuestra divinidad divinamente con las estrellas os fortifican, y os hacen merecedora del merecimiento que merece la vuestra grandeza».
                 </p>
             </div>
         </section>
-        <section class="superposicion">
-            <div class="capa-1">Capa 1 (z-index: 1)</div>
-            <div class="capa-2">Capa 2 (z-index: 2)</div>
-            <div class="capa-3">Capa 3 (z-index: 3)</div>
+        <section class="superposicion"><!-- Sección con bloques superpuestos -->
+            <h2 class="h2">Bloques superpuestos con z-index</h2><!-- Encabezado de segundo nivel -->
+            <div class="capa-1">Capa 1 (z-index: 1)</div><!-- Primer bloque con z-index 1 -->
+            <div class="capa-2">Capa 2 (z-index: 2)</div><!-- Segundo bloque con z-index 2 -->
+            <div class="capa-3">Capa 3 (z-index: 3)</div><!-- Tercer bloque con z-index 3 -->
+        </section>
     </main>
 </body>
 </html>
-
-
-1. Crea un ejemplo HTML y CSS donde un menú superior se mantenga fijo al hacer scroll (usa position: fixed).
-
-2. Implementa una sección con encabezado sticky dentro de un área con contenido largo, de forma que el encabezado quede
- fijo al llegar a la parte superior al hacer scroll.
-
-3. Crea una imagen flotante a la izquierda de un párrafo de texto, utilizando
-float, y asegúrate de que el contenedor no colapse.
-
-4. Demuestra un error común de float (colapso del contenedor) y soluciona el problema usando una técnica moderna de
-clearfix.
-
-5. Diseña tres bloques superpuestos con diferentes colores y valores de z-index
-para mostrar claramente el orden de apilamiento.
-
-6.Explica con comentarios en el CSS y HTML qué hace cada propiedad y cuál es el efecto visual que se logra con cada una.
-
-Justifica las decisiones tomadas, explica los efectos observados y reflexiona sobre cuándo utilizar cada propiedad en proyectos reales.
-

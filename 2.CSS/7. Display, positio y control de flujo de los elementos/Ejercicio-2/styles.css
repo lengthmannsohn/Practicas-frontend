@@ -1,52 +1,56 @@
+/* Estilos para el menú fijo en la parte superior */
 .cabecera {
     position: fixed;
 
 }
 
+/* Estilos para la lista horizontal */
 .lista-desordenada {
     display: flex;
 }
 
+/* Eliminar los puntos de la lista */
 ul {
   list-style-type: none;
 }
 
+/* Espaciado entre los elementos de la lista */
 li {
     margin-left: 1ch;
 }
 
-
+/* Estilos para el encabezado sticky */
 .h2 {
     position: sticky;
     top: 50px;
 }
 
+/* Estilos para la imagen flotante y el contenedor */
 .contenedor {
   background: lightgray;
   overflow: auto;
 }
 
+/* Estilos para la imagen flotante */
 .img-flotante {
     float: left;
     margin-right: 15px;
 }
 
+/* Técnica clearfix para evitar el colapso del contenedor */
 .clearfix::after {
     content: "";
     display: table;
     clear: both;
 }
 
+/* Estilos para el contenedor de clearfix */
 .clearfix {
   background: sandybrown;
 
 }
 
-.img-flotante {
-    float: left;
-    margin-right: 15px;
-}
-
+/* Estilos para los bloques superpuestos con z-index */
 .capa-1 {
     position: absolute;
     top: 50px;
@@ -57,6 +61,7 @@ li {
     z-index: 1; /* Capa inferior */
 }
 
+/* Capa intermedia */
 .capa-2 {
     position: absolute;
     top: 100px;
@@ -67,6 +72,7 @@ li {
     z-index: 2; /* Capa intermedia */
 }
 
+/* Capa superior */
 .capa-3 {
     position: absolute;
     top: 150px;
@@ -77,21 +83,4 @@ li {
     z-index: 3; /* Capa superior */
 }
 
-/* 1. Crea un ejemplo HTML y CSS donde un menú superior se mantenga fijo al hacer scroll (usa position: fixed).
-
-2. Implementa una sección con encabezado sticky dentro de un área con contenido largo, de forma que el encabezado quede
- fijo al llegar a la parte superior al hacer scroll.
-
-3. Crea una imagen flotante a la izquierda de un párrafo de texto, utilizando
-float, y asegúrate de que el contenedor no colapse.
-
-4. Demuestra un error común de float (colapso del contenedor) y soluciona el problema usando una técnica moderna de
-clearfix.
-
-5. Diseña tres bloques superpuestos con diferentes colores y valores de z-index
-para mostrar claramente el orden de apilamiento.
-
-6.Explica con comentarios en el CSS y HTML qué hace cada propiedad y cuál es el efecto visual que se logra con cada una.
-
-Justifica las decisiones tomadas, explica los efectos observados y reflexiona sobre cuándo utilizar cada propiedad en proyectos reales. */
 
