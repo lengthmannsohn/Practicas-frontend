@@ -1,0 +1,229 @@
+<!doctype html>
+<title>Guía Madrid · Beta privada</title>
+<link rel="stylesheet" href="./assets/styles.css" />
+</head>
+<body>
+<header class="topbar">
+<div class="container">
+<h1>Guía Madrid <span class="beta">BETA PRIVADA</span></h1>
+<nav>
+<a href="index.html" class="active">Inicio</a>
+<a href="reseñas.html">Reseñas</a>
+<a href="perfil.html?alias=Luna">Perfil</a>
+<a href="#" class="btn" id="btnLogin">Acceso</a>
+</nav>
+</div>
+</header>
+
+<main class="container grid">
+<aside class="panel filtros">
+<h2>Filtros</h2>
+<label for="barrio-input">Busca o selecciona un barrio de Madrid:</label><br>
+    <!-- El atributo 'list' del input se enlaza con el 'id' del datalist -->
+    <input list="barrios-madrid" id="barrio-input" name="barrio-input">
+
+    <!-- El datalist contiene todas las opciones -->
+    <datalist id="barrios-madrid">
+        <!-- Distrito 01: Centro -->
+        <option value="Palacio"></option>
+        <option value="Embajadores"></option>
+        <option value="Cortes"></option>
+        <option value="Justicia"></option>
+        <option value="Universidad"></option>
+        <option value="Sol"></option>
+        <!-- Distrito 02: Arganzuela -->
+        <option value="Imperial"></option>
+        <option value="Acacias"></option>
+        <option value="La Chopera"></option>
+        <option value="Legazpi"></option>
+        <option value="Delicias"></option>
+        <option value="Punta del Diamante (Arganzuela)"></option>
+        <option value="Atocha"></option>
+        <!-- Distrito 03: Retiro -->
+        <option value="Pacífico"></option>
+        <option value="Adelfas"></option>
+        <option value="Estrella"></option>
+        <option value="Ibiza"></option>
+        <option value="Jerónimos"></option>
+        <option value="Niño Jesús"></option>
+        <!-- Distrito 04: Salamanca -->
+        <option value="Recoletos"></option>
+        <option value="Goya"></option>
+        <option value="Fuente del Berro"></option>
+        <option value="Guindalera"></option>
+        <option value="Lista"></option>
+        <option value="Castellana (Salamanca)"></option>
+        <!-- Distrito 05: Chamartín -->
+        <option value="El Viso"></option>
+        <option value="Prosperidad"></option>
+        <option value="Ciudad Jardín"></option>
+        <option value="Hispanoamérica"></option>
+        <option value="Nueva España"></option>
+        <option value="Castellana (Chamartín)"></option>
+        <!-- Distrito 06: Tetuán -->
+        <option value="Bellas Vistas"></option>
+        <option value="Cuatro Caminos"></option>
+        <option value="Castillejos"></option>
+        <option value="Almenara"></option>
+        <option value="Valdeacederas"></option>
+        <option value="Berruguete"></option>
+        <!-- Distrito 07: Chamberí -->
+        <option value="Gaztambide"></option>
+        <option value="Arapiles"></option>
+        <option value="Trafalgar"></option>
+        <option value="Almagro"></option>
+        <option value="Ríos Rosas"></option>
+        <option value="Vallehermoso"></option>
+        <!-- Distrito 08: Fuencarral-El Pardo -->
+        <option value="El Pardo"></option>
+        <option value="Fuentelarreina"></option>
+        <option value="Peñagrande"></option>
+        <option value="Pilar"></option>
+        <option value="La Paz (Fuencarral)"></option>
+        <option value="Valverde"></option>
+        <option value="Mirasierra"></option>
+        <option value="El Goloso"></option>
+        <!-- Distrito 09: Moncloa-Aravaca -->
+        <option value="Casa de Campo"></option>
+        <option value="Argüelles"></option>
+        <option value="Ciudad Universitaria"></option>
+        <option value="Valdezarza"></option>
+        <option value="Valdemarín"></option>
+        <option value="Aravaca"></option>
+        <option value="El Plantío"></option>
+        <!-- Distrito 10: Latina -->
+        <option value="Los Cármenes"></option>
+        <option value="Puerta del Ángel"></option>
+        <option value="Lucero"></option>
+        <option value="Aluche"></option>
+        <option value="Campamento"></option>
+        <option value="Cuatro Vientos"></option>
+        <option value="Las Águilas"></option>
+        <!-- Distrito 11: Carabanchel -->
+        <option value="Comillas"></option>
+        <option value="Opañel"></option>
+        <option value="San Isidro (Carabanchel)"></option>
+        <option value="Vista Alegre"></option>
+        <option value="Puerta Bonita"></option>
+        <option value="Buenavista (Carabanchel)"></option>
+        <option value="Abrantes"></option>
+        <!-- Distrito 12: Usera -->
+        <option value="Orcasitas"></option>
+        <option value="Orcasur"></option>
+        <option value="San Fermín"></option>
+        <option value="Almendrales"></option>
+        <option value="Moscardó"></option>
+        <option value="Zofío"></option>
+        <option value="Pradolongo"></option>
+        <!-- Distrito 13: Puente de Vallecas -->
+        <option value="Entrevías"></option>
+        <option value="San Diego"></option>
+        <option value="Palomeras Bajas"></option>
+        <option value="Palomeras Sureste"></option>
+        <option value="Portazgo"></option>
+        <option value="Numancia"></option>
+        <!-- Distrito 14: Moratalaz -->
+        <option value="Pavones"></option>
+        <option value="Horcajo"></option>
+        <option value="Marroquina"></option>
+        <option value="Media Legua"></option>
+        <option value="Fontarrón"></option>
+        <option value="Vinateros"></option>
+        <!-- Distrito 15: Ciudad Lineal -->
+        <option value="Ventas"></option>
+        <option value="Pueblo Nuevo"></option>
+        <option value="Quintana"></option>
+        <option value="Concepción"></option>
+        <option value="San Pascual"></option>
+        <option value="San Juan Bautista"></option>
+        <option value="Colina"></option>
+        <option value="Atalaya"></option>
+        <option value="Costillares"></option>
+        <!-- Distrito 16: Hortaleza -->
+        <option value="Palomas"></option>
+        <option value="Piovera"></option>
+        <option value="Canillas"></option>
+        <option value="Pinar del Rey"></option>
+        <option value="Apostol Santiago"></option>
+        <option value="Valdefuentes"></option>
+        <!-- Distrito 17: Villaverde -->
+        <option value="San Andrés"></option>
+        <option value="San Cristóbal"></option>
+        <option value="Butarque"></option>
+        <option value="Los Rosales"></option>
+        <option value="Los Ángeles (Villaverde)"></option>
+        <!-- Distrito 18: Villa de Vallecas -->
+        <option value="Casco Histórico de Vallecas"></option>
+        <option value="Santa Eugenia"></option>
+        <option value="Ensanche de Vallecas"></option>
+        <!-- Distrito 19: Vicálvaro -->
+        <option value="Casco Histórico de Vicálvaro"></option>
+        <option value="Valdebernardo"></option>
+        <option value="Valderrivas"></option>
+        <option value="El Cañaveral"></option>
+        <!-- Distrito 20: San Blas-Canillejas -->
+        <option value="Simancas"></option>
+        <option value="Hellín"></option>
+        <option value="Amposta"></option>
+        <option value="Arcos"></option>
+        <option value="Rosas"></option>
+        <option value="Rejas"></option>
+        <option value="Canillejas"></option>
+        <option value="El Salvador (San Blas)"></option>
+        <!-- Distrito 21: Barajas -->
+        <option value="Alameda de Osuna"></option>
+        <option value="Aeropuerto"></option>
+        <option value="Casco Histórico de Barajas"></option>
+        <option value="Timón"></option>
+        <option value="Corralejos"></option>
+    </datalist>
+
+<label>Idioma
+<select id="fIdioma">
+<option value="">Todos</option>
+<option>ES</option>
+<option>EN</option>
+<option>IT</option>
+<option>FR</option>
+</select>
+</label>
+<label>Horario
+<select id="fHorario">
+<option value="">Cualquiera</option>
+<option>mañana</option>
+<option>tarde</option>
+<option>noche</option>
+</select>
+</label>
+<label>Precio máx. (€)
+<input type="number" id="fPrecioMax" min="0" placeholder="ej. 120" />
+</label>
+<button id="btnLimpiar" class="btn secondary">Limpiar</button>
+</aside>
+
+<section>
+<div id="stats" class="stats"></div>
+<div id="listado" class="cards"></div>
+</section>
+</main>
+
+<section class="container">
+<h2>Mapa (zona aproximada)</h2>
+<p class="muted">Las ubicaciones son aproximadas por privacidad. Datos ficticios.</p>
+<div class="mapwrap">
+<!-- Sustituye TU_URL_DE_UMAP por el iframe de tu mapa en uMap -->
+<iframe src="TU_URL_DE_UMAP" width="100%" height="420" frameborder="0" allowfullscreen></iframe>
+</div>
+</section>
+
+<footer class="footer">
+<div class="container">
+<a href="#" title="Aviso legal">Aviso legal (placeholder)</a>
+<a href="#" title="Privacidad">Privacidad (placeholder)</a>
+<a href="#" title="Normas">Normas de comunidad (placeholder)</a>
+</div>
+</footer>
+
+<script src="./js/app.js"></script>
+</body>
+</html>

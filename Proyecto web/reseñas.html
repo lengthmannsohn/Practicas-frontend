@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Reseñas · Beta privada</title>
+<link rel="stylesheet" href="./assets/styles.css" />
+</head>
+<body>
+<header class="topbar">
+<div class="container">
+<h1>Guía Madrid</h1>
+<nav>
+<a href="index.html">Inicio</a>
+<a href="reseñas.html" class="active">Reseñas</a>
+<a href="perfil.html?alias=Luna">Perfil</a>
+<a href="#" class="btn" id="btnLogin">Acceso</a>
+</nav>
+</div>
+</header>
+
+<main class="container">
+<h2>Reseñas (simuladas)</h2>
+<div class="reviews">
+<article class="review">
+<header>
+<strong>Usuario verificado</strong>
+<span class="muted">· hace 3 días</span>
+</header>
+<p>Experiencia positiva. Comunicación clara y trato respetuoso. (Texto moderado)</p>
+</article>
+<article class="review">
+<header>
+<strong>Usuario verificado</strong>
+<span class="muted">· hace 1 semana</span>
+</header>
+<p>Todo según lo acordado. Puntualidad y profesionalidad. (Texto moderado)</p>
+</article>
+</div>
+
+<h3>Añadir reseña (demo)</h3>
+<form class="panel" onsubmit="event.preventDefault(); alert('Solo demo.');">
+<label>Alias (interno)
+<input type="text" placeholder="tu alias" required />
+</label>
+<label>Comentario (moderado)
+<textarea rows="4" required></textarea>
+</label>
+<button class="btn">Enviar reseña</button>
+</form>
+</main>
+</body>
+</html>

@@ -1,0 +1,10 @@
+[
+{"alias":"Luna","barrio":"Salamanca","precio_desde":120,"idiomas":["ES","EN"],"horario":"tarde","lat":40.426,"lng":-3.675,"verificado":true},
+{"alias":"Mara","barrio":"Centro","precio_desde":80,"idiomas":["ES"],"horario":"noche","lat":40.416,"lng":-3.703,"verificado":false},
+{"alias":"Iris","barrio":"Chamberí","precio_desde":100,"idiomas":["ES","IT"],"horario":"mañana","lat":40.433,"lng":-3.704,"verificado":true},
+{"alias":"Noa","barrio":"Arganzuela","precio_desde":90,"idiomas":["ES","EN"],"horario":"tarde","lat":40.398,"lng":-3.700,"verificado":false},
+{"alias":"Vega","barrio":"Tetuán","precio_desde":70,"idiomas":["ES"],"horario":"noche","lat":40.460,"lng":-3.697,"verificado":false},
+{"alias":"Ada","barrio":"Moncloa","precio_desde":110,"idiomas":["ES","EN","FR"],"horario":"mañana","lat":40.433,"lng":-3.719,"verificado":true},
+{"alias":"Nora","barrio":"Retiro","precio_desde":95,"idiomas":["ES","EN"],"horario":"tarde","lat":40.411,"lng":-3.682,"verificado":false},
+{"alias":"Ely","barrio":"Chamartín","precio_desde":140,"idiomas":["ES"],"horario":"tarde","lat":40.460,"lng":-3.676,"verificado":true}
+]

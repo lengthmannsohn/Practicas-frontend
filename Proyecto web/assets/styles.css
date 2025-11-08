@@ -1,0 +1,28 @@
+:root{--bg:#0f1115;--card:#171a21;--muted:#9aa4b2;--text:#e8eef6;--acc:#52e3c2}
+*{box-sizing:border-box}
+body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,'Helvetica Neue',Arial;color:var(--text);background:linear-gradient(180deg,#0d1014,#0f1115)}
+.container{max-width:1100px;margin:auto;padding:16px}
+.topbar{position:sticky;top:0;background:#0b0d10;border-bottom:1px solid #20242e;z-index:10}
+.topbar .container{display:flex;align-items:center;justify-content:space-between}
+.beta{font-size:.75rem;background:var(--acc);color:#0a0f13;padding:2px 6px;border-radius:8px;margin-left:8px}
+nav a{color:var(--text);text-decoration:none;margin-right:12px;opacity:.9}
+nav a.active{border-bottom:2px solid var(--acc)}
+.btn{background:var(--acc);color:#0a0f13;border:none;padding:10px 14px;border-radius:10px;cursor:pointer;font-weight:600;text-decoration:none;display:inline-block}
+.btn.secondary{background:#2b313d;color:#dce3ec}
+.grid{display:grid;grid-template-columns:300px 1fr;gap:16px}
+.grid.two{grid-template-columns:1fr 1fr}
+@media (max-width:900px){.grid{grid-template-columns:1fr}}
+.panel{background:var(--card);padding:16px;border:1px solid #20242e;border-radius:12px}
+.filtros label{display:block;margin-bottom:10px}
+.filtros input,.filtros select,.filtros textarea{width:100%;padding:10px;border-radius:8px;border:1px solid #2a2f3a;background:#0f1319;color:var(--text)}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:14px}
+.card{background:var(--card);border:1px solid #20242e;padding:14px;border-radius:14px;display:flex;flex-direction:column;gap:8px}
+.card h3{margin:0}
+.pillset{display:flex;flex-wrap:wrap;gap:6px;padding:0;margin:8px 0;list-style:none}
+.pill{background:#0f1319;border:1px solid #2a2f3a;color:#cfe6f7;padding:4px 8px;border-radius:999px;font-size:.85rem}
+.muted{color:var(--muted)}
+.stats{margin-bottom:10px;color:#cfe6f7}
+.footer{margin-top:40px;border-top:1px solid #20242e}
+.mapwrap{border:1px solid #20242e;border-radius:12px;overflow:hidden}
+.list{list-style:none;padding:0;margin:0}
+.review{background:var(--card);border:1px solid #20242e;padding:12px;border-radius:10px;margin-bottom:10px}

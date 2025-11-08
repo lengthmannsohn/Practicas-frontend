@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Perfil · Beta privada</title>
+<link rel="stylesheet" href="./assets/styles.css" />
+</head>
+<body>
+<header class="topbar">
+<div class="container">
+<h1>Guía Madrid</h1>
+<nav>
+<a href="index.html">Inicio</a>
+<a href="reseñas.html">Reseñas</a>
+<a href="perfil.html?alias=Luna" class="active">Perfil</a>
+<a href="#" class="btn" id="btnLogin">Acceso</a>
+</nav>
+</div>
+</header>
+
+<main class="container">
+<article class="perfil">
+<h2 id="alias">Alias</h2>
+<p id="desc" class="muted">Descripción breve y neutral. (Simulada)</p>
+<ul class="pillset" id="tags"></ul>
+<div class="grid two">
+<div>
+<h3>Información</h3>
+<ul class="list">
+<li><strong>Barrio:</strong> <span id="barrio"></span></li>
+<li><strong>Precio desde:</strong> <span id="precio"></span> €</li>
+<li><strong>Idiomas:</strong> <span id="idiomas"></span></li>
+<li><strong>Horario:</strong> <span id="horario"></span></li>
+<li><strong>Área:</strong> zona aproximada</li>
+</ul>
+</div>
+<div>
+<h3>Acciones</h3>
+<a class="btn" href="reseñas.html">Ver reseñas</a>
+<button class="btn secondary" id="btnReportar">Reportar perfil</button>
+</div>
+</div>
+</article>
+</main>
+
+<script>
+// Página simulada: lee ?alias=Luna del querystring para mostrar datos básicos
+const params = new URLSearchParams(location.search);
+const alias = params.get('alias') || 'Luna';
+document.getElementById('alias').textContent = alias;
+document.getElementById('desc').textContent = 'Perfil de ejemplo para pruebas internas. No datos reales.';
+document.getElementById('barrio').textContent = 'Salamanca';
+document.getElementById('precio').textContent = '120';
+document.getElementById('idiomas').textContent = 'ES, EN';
+document.getElementById('horario').textContent = 'tarde';
+</script>
+</body>
+</html>
