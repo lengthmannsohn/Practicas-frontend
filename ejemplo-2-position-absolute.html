@@ -6,31 +6,23 @@
     .contenedor {
       background: lightgray;
       height: 120px;
+      position: relative; /* referencia para el hijo */
     }
 
-    .relativo {
-      background: deepskyblue;
-      width: 100px;
-      height: 100px;
-    }
-
-    .relativo-2 {
-      background: orange;
+    .absoluto {
+      background: tomato;
       width: 100px;
       height: 100px;
       position: absolute;
-      top: 30px;
+      top: 20px;
       left: 30px;
     }
   </style>
 </head>
 <body>
-  <h3>position: relative</h3>
+  <h3>position: absolute</h3>
   <div class="contenedor">
-    <div class="relativo"></div>
+    <div class="absoluto"></div>
   </div>
-
-  <div class="relativo-2"></div>
-
 </body>
 </html>

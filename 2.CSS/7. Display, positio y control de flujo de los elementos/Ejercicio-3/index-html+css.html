@@ -4,6 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        /* Ocultación comparada */
+        .hidden-display {
+            display: none; /* No ocupa espacio en el layout */
+        }
+        .hidden-visibility {
+            visibility: hidden; /* Ocupa espacio pero no es visible */
+        }
+
+        /* Mostrar/ocultar con transición */
+        .contenedor {
+            max-height: 0;
+            opacity: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease, opacity 0.5s ease;
+        }
+        details[open] .contenedor {
+            max-height: 200px; /* Ajusta según el contenido */
+            opacity: 1;
+        }
+
+        /* Centrado horizontal */
+        .centrado {
+            width: 200px; /* Necesario para que margin auto funcione */
+            margin: 0 auto;
+            background-color: lightgray;
+            padding: 10px;
+        }
+
+        /* Absolute dentro de relativo */
+        .card {
+            position: relative;
+            width: 300px;
+            height: 200px;
+            background-color: #f0f0f0;
+            margin: 20px;
+        }
+        .badge {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: red;
+            color: white;
+            padding: 5px 10px;
+            display: inline-block; /* Cambiado a inline-block para permitir dimensiones y padding */
+        }
+    </style>
 </head>
 <body>
     
