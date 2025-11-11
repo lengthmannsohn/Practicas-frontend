@@ -1,0 +1,89 @@
+/* Estilo general */
+body {
+  font-family: sans-serif;
+  background: #f8f9fa;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.ejemplo {
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  background: #fff;
+  padding: 20px;
+  margin-bottom: 40px;
+}
+
+/* ==============================
+   1️⃣ Centrado horizontal clásico
+   ============================== */
+.contenedor {
+  width: 80%;
+  margin: 0 auto;
+  background: #eee;
+  height: 150px;
+  position: relative;
+}
+
+.caja1 {
+  width: 200px;
+  height: 100px;
+  background: tomato;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  line-height: 100px;
+  margin: auto; /* centrado horizontal (funciona porque tiene width) */
+}
+
+/* ==============================
+   2️⃣ Centrado con Flexbox
+   ============================== */
+.contenedor-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #e0f7fa;
+  height: 200px;
+}
+
+.caja2 {
+  width: 200px;
+  height: 100px;
+  background: #00796b;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  line-height: 100px;
+  margin: auto; /* También funciona dentro de flexbox */
+}
+
+/* ==============================
+   3️⃣ Centrado con position + transform
+   ============================== */
+.contenedor-pos {
+  background: #fce4ec;
+  position: relative;
+  height: 200px;
+}
+
+.caja3 {
+  width: 200px;
+  height: 100px;
+  background: #c2185b;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  line-height: 100px;
+
+  /* centrado absoluto */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
