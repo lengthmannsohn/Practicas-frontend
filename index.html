@@ -3,34 +3,205 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ejemplos de margin:auto</title>
+  <title>Landing Moderna</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <h1>Ejemplos de <code>margin: auto</code></h1>
-
-  <!-- Ejemplo 1 -->
-  <section class="ejemplo ejemplo1">
-    <h2>1️⃣ Centrado horizontal (bloque clásico)</h2>
-    <div class="contenedor">
-      <div class="caja caja1">Caja centrada</div>
+  <!-- CABECERA -->
+  <header class="header">
+    <div class="container header__content">
+      <div class="logo">MiMarca<span>.</span></div>
+      <nav class="nav">
+        <a href="#features">Características</a>
+        <a href="#pricing">Precios</a>
+        <a href="#testimonials">Opiniones</a>
+        <a href="#cta" class="nav__btn">Empieza ahora</a>
+      </nav>
     </div>
-  </section>
+  </header>
 
-  <!-- Ejemplo 2 -->
-  <section class="ejemplo ejemplo2">
-    <h2>2️⃣ Centrado horizontal y vertical (con Flexbox)</h2>
-    <div class="contenedor-flex">
-      <div class="caja caja2">Caja centrada con Flexbox</div>
-    </div>
-  </section>
+  <!-- HERO / PORTADA -->
+  <main>
+    <section class="hero">
+      <div class="container hero__content">
+        <div class="hero__text">
+          <h1>Tu solución moderna para lanzar proyectos en minutos</h1>
+          <p>
+            Crea, lanza y valida tus ideas sin complicarte. Una herramienta pensada
+            para personas que quieren resultados reales sin perder tiempo en lo técnico.
+          </p>
+          <div class="hero__actions">
+            <a href="#cta" class="btn btn--primary">Empieza gratis</a>
+            <a href="#features" class="btn btn--ghost">Ver cómo funciona</a>
+          </div>
+          <p class="hero__note">Sin tarjeta de crédito • Cancela cuando quieras</p>
+        </div>
+        <div class="hero__image">
+          <div class="hero__card">
+            <h3>Panel en tiempo real</h3>
+            <p>Visualiza tus métricas clave desde un único lugar.</p>
+            <ul>
+              <li>✔ Progreso de tus proyectos</li>
+              <li>✔ Métricas de conversión</li>
+              <li>✔ Notificaciones importantes</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <!-- Ejemplo 3 -->
-  <section class="ejemplo ejemplo3">
-    <h2>3️⃣ Centrado horizontal y vertical (sin flex, usando position)</h2>
-    <div class="contenedor-pos">
-      <div class="caja caja3">Caja centrada con position</div>
+    <!-- SECCIÓN DE CARACTERÍSTICAS -->
+    <section id="features" class="section">
+      <div class="container">
+        <div class="section__head">
+          <h2>Todo lo que necesitas en una sola herramienta</h2>
+          <p>Simple, pero lo suficientemente potente para crecer contigo.</p>
+        </div>
+        <div class="grid grid--3">
+          <article class="card feature">
+            <h3>Configuración en minutos</h3>
+            <p>Olvídate de instalaciones complejas. Empieza con unos pocos clics.</p>
+          </article>
+          <article class="card feature">
+            <h3>Diseño responsive</h3>
+            <p>Tu proyecto se verá bien en móviles, tablets y ordenadores.</p>
+          </article>
+          <article class="card feature">
+            <h3>Escalable</h3>
+            <p>Crecemos con tu proyecto, sin que tengas que cambiar de herramienta.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN DE BENEFICIOS / DESTACADOS -->
+    <section class="section section--alt">
+      <div class="container grid grid--2">
+        <div>
+          <h2>Un panel claro para tomar decisiones rápidas</h2>
+          <p>
+            Deja de perderte entre hojas de cálculo y pestañas del navegador.
+            Centraliza tus datos y céntrate en lo importante: avanzar.
+          </p>
+          <ul class="list">
+            <li>✔ Métricas en tiempo real</li>
+            <li>✔ Sin necesidad de saber programar</li>
+            <li>✔ Actualizaciones automáticas</li>
+          </ul>
+        </div>
+        <div class="highlight">
+          <p class="highlight__label">Ejemplo de resultado</p>
+          <p class="highlight__value">+37% conversión</p>
+          <p class="highlight__desc">
+            Usuarios que optimizaron sus proyectos con nuestra plataforma.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN DE PRECIOS -->
+    <section id="pricing" class="section">
+      <div class="container">
+        <div class="section__head">
+          <h2>Elige el plan que encaja contigo</h2>
+          <p>Empieza gratis y sube de nivel cuando sea el momento.</p>
+        </div>
+        <div class="grid grid--3 pricing">
+          <article class="card pricing__card">
+            <h3>Starter</h3>
+            <p class="pricing__price">0€ / mes</p>
+            <p class="pricing__subtitle">Perfecto para probar ideas.</p>
+            <ul class="list">
+              <li>✔ 1 proyecto activo</li>
+              <li>✔ Hasta 500 visitas/mes</li>
+              <li>✔ Soporte por email</li>
+            </ul>
+            <a href="#cta" class="btn btn--ghost full-width">Empieza gratis</a>
+          </article>
+
+          <article class="card pricing__card pricing__card--featured">
+            <p class="badge">Más popular</p>
+            <h3>Pro</h3>
+            <p class="pricing__price">19€ / mes</p>
+            <p class="pricing__subtitle">Para proyectos en serio.</p>
+            <ul class="list">
+              <li>✔ 5 proyectos activos</li>
+              <li>✔ Hasta 20.000 visitas/mes</li>
+              <li>✔ Soporte prioritario</li>
+            </ul>
+            <a href="#cta" class="btn btn--primary full-width">Elegir Pro</a>
+          </article>
+
+          <article class="card pricing__card">
+            <h3>Business</h3>
+            <p class="pricing__price">49€ / mes</p>
+            <p class="pricing__subtitle">Equipos y negocios en crecimiento.</p>
+            <ul class="list">
+              <li>✔ Proyectos ilimitados</li>
+              <li>✔ Visitas ilimitadas</li>
+              <li>✔ Soporte dedicado</li>
+            </ul>
+            <a href="#cta" class="btn btn--ghost full-width">Hablar con ventas</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN TESTIMONIOS -->
+    <section id="testimonials" class="section section--alt">
+      <div class="container">
+        <div class="section__head">
+          <h2>Personas reales, resultados reales</h2>
+          <p>Historias de quienes ya han lanzado con nuestra plataforma.</p>
+        </div>
+        <div class="grid grid--3">
+          <article class="card testimonial">
+            <p>
+              “En una tarde tenía una landing funcionando y captando leads.
+              Antes tardaba semanas.”
+            </p>
+            <p class="testimonial__name">— Ana, emprendedora</p>
+          </article>
+          <article class="card testimonial">
+            <p>
+              “Nos ayudó a validar ideas sin invertir en desarrollo a medida.”
+            </p>
+            <p class="testimonial__name">— Carlos, agencia digital</p>
+          </article>
+          <article class="card testimonial">
+            <p>
+              “La curva de aprendizaje es muy corta. Ideal para empezar.”
+            </p>
+            <p class="testimonial__name">— Luis, freelance</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CALL TO ACTION FINAL -->
+    <section id="cta" class="section cta">
+      <div class="container cta__content">
+        <div>
+          <h2>¿Listo para lanzar tu próxima idea?</h2>
+          <p>
+            Empieza hoy mismo con el plan Starter y da el primer paso.
+            Siempre podrás mejorar más adelante.
+          </p>
+        </div>
+        <a href="#" class="btn btn--primary btn--large">Crear mi cuenta</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer__content">
+      <p>© 2025 MiMarca. Todos los derechos reservados.</p>
+      <div class="footer__links">
+        <a href="#">Política de privacidad</a>
+        <a href="#">Términos de uso</a>
+      </div>
     </div>
-  </section>
+  </footer>
 </body>
 </html>
