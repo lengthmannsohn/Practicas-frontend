@@ -5,115 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        /* Ocultación comparada */
-        .hidden-display {
-            display: none; /* No ocupa espacio en el layout */
+        .display-none {
+            display: none; /* No ocupa espacio en el flujo del documento */
         }
-        .hidden-visibility {
+
+        .visibility-hidden {
             visibility: hidden; /* Ocupa espacio pero no es visible */
-        }
-
-        /* Mostrar/ocultar con transición */
-        .contenedor {
-            max-height: 0;
-            opacity: 0;
-            overflow: hidden;
-            transition: max-height 0.5s ease, opacity 0.5s ease;
-        }
-        details[open] .contenedor {
-            max-height: 200px; /* Ajusta según el contenido */
-            opacity: 1;
-        }
-
-        /* Centrado horizontal */
-        .centrado {
-            width: 200px; /* Necesario para que margin auto funcione */
-            margin: 0 auto;
-            background-color: lightgray;
-            padding: 10px;
-        }
-
-        /* Absolute dentro de relativo */
-        .card {
-            position: relative;
-            width: 300px;
-            height: 200px;
-            background-color: #f0f0f0;
-            margin: 20px;
-        }
-        .badge {
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            background-color: red;
-            color: white;
-            padding: 5px 10px;
-            display: inline-block; /* Cambiado a inline-block para permitir dimensiones y padding */
         }
     </style>
 </head>
 <body>
-    
+    <ul>
+        <li>
+            <p>Primer párrafo (visible)</p>
+        </li>
+        <li>
+            <p class="display-none">Segundo párrafo (oculto con display: none)</p>
+            <!-- El segundo párrafo no ocupa espacio en el flujo del documento -->
+        </li>
+        <li>
+            <p class="visibility-hidden">Tercer párrafo (oculto con visibility: hidden)</p>
+            <!-- El tercer párrafo ocupa espacio pero no es visible -->
+        </li>
+    </ul>
 </body>
 </html>
 
 
+Completa las tareas aplicando display, visibility, opacity, transiciones con
+max-height, centrado clásico con margin: auto y posicionamiento relativo/absoluto.
 
-Completa las tareas aplicando
-display
-,
-visibility
-,
-opacity
-, transiciones con
-max-height
-, centrado clásico con
-margin: auto
-y posicionamiento relativo/absoluto.
+1. Ocultación comparada: en una lista de 3 párrafos, oculta el 2º con
+display: none y el 3º con visibility: hidden. Añade un comentario indicando cómo afecta al espacio.
 
-Ocultación comparada: en una lista de 3 párrafos, oculta el 2º con
-display: none
-y el 3º con
-visibility: hidden
-. Añade un comentario indicando cómo afecta al espacio.
-Mostrar/ocultar con transición: usa
-<details><summary>
-para controlar un panel
-.contenedor
-que se expanda/colapse con
-max-height
-+
-opacity
-+
-transition
-.
-Centrado horizontal: centra un bloque de
-200px
-de ancho con
-margin: 0 auto
-. Incluye un comentario sobre la necesidad de
-width
-.
-Absolute dentro de relativo: en una tarjeta
-.card
-con
-position: relative
-, coloca una
-.badge
-en la esquina superior derecha con
-position: absolute
-. Si tu
-.badge
-fuera
-display: inline
-, justifica en 1 frase el cambio a
-inline-block
-o
-block
-.
-Accesibilidad mínima: cuando uses
-<details>
-, añade un
-summary
-claro y significativo.
+2. Mostrar/ocultar con transición: usa <details><summary> para controlar un panel .contenedor
+que se expanda/colapse con max-height + opacity + transition.
+
+3. Centrado horizontal: centra un bloque de 200px de ancho con margin: 0 auto. 
+Incluye un comentario sobre la necesidad de width.
+
+4. Absolute dentro de relativo: en una tarjeta .card con position: relative, coloca una .badge
+en la esquina superior derecha con position: absolute. Si tu .badge fuera display: inline,
+justifica en 1 frase el cambio a inline-block o block.
+
+5. Accesibilidad mínima: cuando uses <details>, añade un summary claro y significativo.
+
 Entrega: un único fragmento con HTML + CSS, con comentarios breves.
+

@@ -1,0 +1,22 @@
+/* Contenedor con posición relativa */
+.contenedor {
+ position: relative;
+ padding: 2em;
+ background: #f5f5f5;
+ margin: 50px auto;
+ width: 80%;
+ display: block;
+}
+
+/* Elemento flotante con absolute */
+.badge {
+ position: absolute;
+ top: 10px;
+ right: 10px;
+ background: crimson;
+ color: white;
+ padding: 0.5em 1em;
+ font-size: 0.9em;
+ border-radius: 5px;
+ display: inline-block;
+}
