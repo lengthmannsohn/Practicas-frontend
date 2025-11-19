@@ -12,22 +12,127 @@
         .visibility-hidden {
             visibility: hidden; /* Ocupa espacio pero no es visible */
         }
+
+        .oculto {
+        display: none;
+        }
+
+        .invisible {
+        visibility: hidden;
+        }
+
+        details {
+            /* Opcional: estilo del contenedor */
+            margin: 1rem 0;
+            padding: 0.5rem 0.75rem;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            background: #f9f9f9;
+        }
+
+        /* Estilo del summary (la “cabecera” clicable) */
+        details > summary {
+            cursor: pointer;
+            font-weight: 600;
+            list-style: none;
+        }
+
+        /* Quitar la flecha por defecto (opcional) */
+        details > summary::-webkit-details-marker {
+            display: none;
+        }
+
+        /* Contenedor animado */
+        details .contenedor {
+            max-height: 0;
+            opacity: 0;
+            overflow: hidden;
+            transition:
+                max-height 0.4s ease,
+                opacity 0.4s ease;
+        }
+
+        /* Cuando el <details> está abierto, expandimos el panel */
+        details[open] .contenedor {
+            max-height: 500px; /* valor suficientemente grande */
+            opacity: 1;
+        }
+
+        .centrado {
+            width: 200px; /* Necesario para que margin: 0 auto funcione correctamente */
+            margin: 0 auto;
+            background-color: lightgray;
+            padding: 10px;
+        }
+        .card {
+            position: relative;
+            width: 300px;
+            height: 150px;
+            border: 1px solid #000;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        
+        .badge {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: red;
+            color: white;
+            padding: 5px;
+            border-radius: 5px;
+        }
+
     </style>
 </head>
 <body>
-    <ul>
-        <li>
-            <p>Primer párrafo (visible)</p>
-        </li>
-        <li>
-            <p class="display-none">Segundo párrafo (oculto con display: none)</p>
-            <!-- El segundo párrafo no ocupa espacio en el flujo del documento -->
-        </li>
-        <li>
-            <p class="visibility-hidden">Tercer párrafo (oculto con visibility: hidden)</p>
-            <!-- El tercer párrafo ocupa espacio pero no es visible -->
-        </li>
-    </ul>
+    <div>
+        <h2>Ejercicio 1: Ocultación comparada</h2>
+        <ul>
+            <li>
+                <p>Primer párrafo (visible)</p>
+            </li>
+            <li>
+                <p class="display-none">Segundo párrafo (oculto con display: none)</p>
+                <!-- El segundo párrafo no ocupa espacio en el flujo del documento -->
+            </li>
+            <li>
+                <p class="visibility-hidden">Tercer párrafo (oculto con visibility: hidden)</p>
+                <!-- El tercer párrafo ocupa espacio pero no es visible -->
+            </li>
+        </ul>
+    </div>
+    <div>
+        <h2>Ejercicio 2: Mostrar/ocultar con transición</h2>
+        <details>
+            <summary>Haz clic aquí para ver detalles</summary>
+            <div class="contenedor">
+                <p>Este es el contenido que se muestra al desplegar el menú.</p>
+                <ul>
+                    <li>Elemento 1</li>
+                    <li>Elemento 2</li>
+                </ul>
+            </div>
+        </details>
+    </div>
+    <div>
+        <h2>Ejercicio 3: Centrado horizontal</h2>
+        <div class="centrado">
+            <p>Este bloque está centrado horizontalmente.</p>
+            <!-- Es necesario definir un width para que margin: 0 auto funcione correctamente -->
+        </div>
+    </div>
+    <div>
+        <h2>Ejercicio 4: Absolute dentro de relativo</h2>
+        <div class="card">
+            <div class="badge">
+                Badge
+            </div>
+            <p>Contenido de la tarjeta.</p>
+            <!-- Cambiamos .badge a inline-block o block para poder aplicar width, height y padding correctamente -->
+        </div>
+    </div> 
+
 </body>
 </html>
 
