@@ -1,0 +1,46 @@
+{% extends "core/base.html" %}
+
+{% block content %}
+<section class="pricing-hero">
+    <h1>Planes de visibilidad para profesionales</h1>
+    <p>
+        Durante la fase de lanzamiento, los planes Estándar y Premium pueden
+        ofrecerse a 0€ como beta (texto editable). Más adelante activas el precio real.
+    </p>
+</section>
+
+<section class="pricing-grid">
+    <article class="pricing-card">
+        <h2>Free</h2>
+        <p class="price">0 €/mes</p>
+        <ul>
+            <li>Presencia básica en listados</li>
+            <li>Pin discreto en el mapa</li>
+            <li>1–2 fotos</li>
+        </ul>
+        <button class="btn-outline" disabled>Plan base</button>
+    </article>
+
+    <article class="pricing-card">
+        <h2>Estándar</h2>
+        <p class="price"><span class="price-old">29 €/mes</span> 0 €/mes en beta</p>
+        <ul>
+            <li>Perfil ampliado con más fotos</li>
+            <li>Mejor posición en listados</li>
+            <li>Pin resaltado en el mapa</li>
+        </ul>
+        <button class="btn-primary" disabled>Registro próximamente</button>
+    </article>
+
+    <article class="pricing-card premium">
+        <h2>Premium</h2>
+        <p class="price"><span class="price-old">59 €/mes</span> 0 €/mes en beta</p>
+        <ul>
+            <li>Máxima visibilidad en tu zona</li>
+            <li>Pin dorado con estrella en el mapa</li>
+            <li>Destacado en la home</li>
+        </ul>
+        <button class="btn-primary" disabled>Registro próximamente</button>
+    </article>
+</section>
+{% endblock %}

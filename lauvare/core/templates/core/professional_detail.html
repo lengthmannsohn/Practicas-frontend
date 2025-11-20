@@ -1,0 +1,26 @@
+{% extends "core/base.html" %}
+
+{% block content %}
+<section class="detail-section">
+    <article class="detail-card">
+        <h1>{{ professional.alias }}</h1>
+        <p class="detail-plan">
+            Plan: {{ professional.get_plan_display }}
+        </p>
+        <p class="detail-price">
+            Tarifa aproximada: {{ professional.price_from }}€{% if professional.price_to %} - {{ professional.price_to }}€{% endif %}
+        </p>
+        <p class="detail-bio">
+            {{ professional.bio }}
+        </p>
+
+        {% if professional.phone %}
+        <p class="detail-contact">
+            Contacto (ficticio para demo): {{ professional.phone }}
+        </p>
+        {% endif %}
+
+        <a href="{% url 'core:home' %}" class="btn-secondary">Volver al mapa</a>
+    </article>
+</section>
+{% endblock %}

@@ -1,0 +1,40 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Lauvare · Mapa de acompañantes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Leaflet CSS (solo en páginas con mapa, pero aquí no molesta) -->
+    <link
+        rel="stylesheet"
+        href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+        crossorigin=""
+    />
+
+    <link rel="stylesheet" href="{% static 'core/css/styles.css' %}">
+    {% block extra_head %}{% endblock %}
+</head>
+<body>
+<header class="site-header">
+    <div class="logo">Lauvare</div>
+    <nav class="main-nav">
+        <a href="{% url 'core:home' %}">Inicio</a>
+        <a href="{% url 'core:pricing' %}">Planes</a>
+        <!-- En el futuro: login/registro -->
+    </nav>
+</header>
+
+<main>
+    {% block content %}{% endblock %}
+</main>
+
+<footer class="site-footer">
+    <p>© {{ now|default:"2025" }} Lauvare · Plataforma de anuncios y visibilidad.</p>
+</footer>
+
+{% block extra_js %}{% endblock %}
+</body>
+</html>

@@ -1,0 +1,47 @@
+{% extends "core/base.html" %}
+{% load static %}
+
+{% block content %}
+<section class="hero">
+    <div class="hero-text">
+        <h1>Acompañantes en tu mapa, al instante</h1>
+        <p>
+            Descubre acompañantes independientes en Madrid según tu zona, presupuesto
+            y estilo. Visibilidad premium para profesionales, discreción para clientes.
+        </p>
+        <a href="{% url 'core:pricing' %}" class="btn-primary">
+            Ver planes para profesionales
+        </a>
+    </div>
+</section>
+
+<section class="map-section">
+    <div id="map"></div>
+    <aside class="results-panel">
+        <h2>Profesionales cercanas</h2>
+        <div id="results-list">
+            {% for p in professionals %}
+                <article class="card-professional">
+                    <h3>{{ p.alias }} {% if p.plan == 'premium' %}<span class="badge badge-premium">Premium</span>{% endif %}</h3>
+                    <p class="price">
+                        Desde {{ p.price_from }}€{% if p.price_to %} a {{ p.price_to }}€{% endif %}
+                    </p>
+                    <p class="bio">{{ p.bio|truncatechars:140 }}</p>
+                    <a href="{% url 'core:professional_detail' p.id %}" class="link-detail">Ver perfil</a>
+                </article>
+            {% empty %}
+                <p>No hay profesionales activas todavía.</p>
+            {% endfor %}
+        </div>
+    </aside>
+</section>
+{% endblock %}
+
+{% block extra_js %}
+<script
+  src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+  integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+  crossorigin="">
+</script>
+<script src="{% static 'core/js/map.js' %}"></script>
+{% endblock %}
